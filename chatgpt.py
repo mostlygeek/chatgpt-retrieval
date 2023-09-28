@@ -37,10 +37,11 @@ else:
     index = VectorstoreIndexCreator().from_loaders([loader])
 
 chain = ConversationalRetrievalChain.from_llm(
-  llm=ChatOpenAI(model="gpt-4"),
+  llm=ChatOpenAI(model="gpt-3.5-turbo"),
   retriever=index.vectorstore.as_retriever(search_kwargs={"k": 1}),
 )
 
+print("-----\n")
 chat_history = []
 while True:
   if not query:

@@ -3,3 +3,7 @@ __pycache__
 persist/
 .DS_Store
 .chroma/
+venv/
+
+# ignore the original screen recording, it's huge
+*.mov

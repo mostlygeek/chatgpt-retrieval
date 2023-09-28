@@ -24,21 +24,26 @@ Place your own data into `data/data.txt`.
 
 * tell me everything you know about john
 * what is john's favorite food? 
-* How old is john on Jan 1, 2023? 
-* If john ate his favorite food once a week since he was 10 years old, how much of it would he have eaten?
+* How old was john on Jan 1, 2023? 
+  * (this works better?) today is sept 28, 2023, how old is john today? think it through take it step by step
 * If today is Sept 10, 2023, and john ate his favorite food once a week since he was 10 years old, how much of it would he have eaten?
+  * should be 404 weeks, 1 day
 
 ### Psych-Ed Assessment questions 
 
 * who performed his psych ed assessment
 * what did the doctor recommend? 
-* what did the doctor's diagnosis in the psych-ed assessment?
+* what was the doctor's diagnosis in the psych-ed assessment?
   * it seems to struggle with this
+* was john diagnosed with autism?
+  * no it was adhd
 
 ### IEP questions 
 
 * Who were the teachers that wrote the 2020, 2021 and 2022 individual education plans?
 * Who was his teacher in 2021 individual education plan?
-* Who was his teacher in 2022 individual education plan?
+* Who was his teacher in 2020 individual education plan?
 
-Notes: the test code seems to do pretty badly on this.  Maybe a result of the IEP docs not being loaded into the context?
+Notes: the test code seems to do pretty badly on the IEP questions.  Maybe a result of the IEP docs not being loaded into the context?
+
+Definitely lots of room for improvement, but good enough for an evening hack! 
