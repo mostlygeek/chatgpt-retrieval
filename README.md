@@ -8,7 +8,9 @@ Here's the [YouTube Video](https://youtu.be/9AXP7tCI9PI).
 
 Install [Langchain](https://github.com/hwchase17/langchain) and other required packages.
 ```
-pip install langchain openai chromadb tiktoken unstructured
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
 ```
 Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and rename it to `constants.py`.
 
