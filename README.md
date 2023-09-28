@@ -3,7 +3,8 @@
 * Generated a fake student's information 
 * Using ChatGPT, Langchain and Chroma vector DB
 * Ask some questions about the data 
-
+* check out the files in the `data/` directory
+* installation instructions below
 
 ![demo video](demo.gif)
 
@@ -26,7 +27,7 @@ $ pip install -r requirements.txt
 ```
 Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and rename it to `constants.py`.
 
-Place your own data into `data/data.txt`.
+Place your own data into `data/`.
 
 ## Example Questions to ask 
 
