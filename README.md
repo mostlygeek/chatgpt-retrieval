@@ -1,6 +1,16 @@
-# chatgpt-retrieval
+# ChatGPT with Retrival
 
-(adapted to try with made up (gpt4 generated) info about a student)
+* Generated a fake student's information 
+* Using ChatGPT, Langchain and Chroma vector DB
+* Ask some questions about the data 
+
+
+![demo video](demo.gif)
+
+
+## Original Repo
+
+[https://github.com/techleadhd/chatgpt-retrieval](techleadhd/chatgpt-retrieval)
 
 Simple script to use ChatGPT on your own files.
 
