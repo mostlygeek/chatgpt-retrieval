@@ -1,0 +1,7 @@
+John Doe's Information:
+
+birthday: "2005-12-12"
+name: "John Doe"
+favorite_food: "Pizza"
+pets_name: "Fluffy"
+address: "123 Main St, Springfield, IL, 62704"

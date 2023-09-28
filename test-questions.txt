@@ -1,0 +1,14 @@
+## Personal information questions 
+
+* tell me everything you know about john
+* what is john's favorite food? 
+* How old is john on Jan 1, 2023? 
+* If john ate his favorite food once a week since he was 10 years old, how much of it would he have eaten?
+* If today is Sept 10, 2023, and john ate his favorite food once a week since he was 10 years old, how much of it would he have eaten?
+
+# Psych-Ed Assessment questions 
+
+* who performed his psych ed assessment
+* what did the doctor recommend? 
+* what did the doctor's diagnosis in the psych-ed assessment?
+  * it seems to struggle with this

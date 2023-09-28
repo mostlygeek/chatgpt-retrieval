@@ -2,6 +2,7 @@ import os
 import sys
 
 import openai
+import textwrap
 from langchain.chains import ConversationalRetrievalChain, RetrievalQA
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import DirectoryLoader, TextLoader
@@ -28,14 +29,15 @@ if PERSIST and os.path.exists("persist"):
   index = VectorStoreIndexWrapper(vectorstore=vectorstore)
 else:
   #loader = TextLoader("data/data.txt") # Use this line if you only need data.txt
-  loader = DirectoryLoader("data/")
+  loader = DirectoryLoader("data/", show_progress=True)
   if PERSIST:
     index = VectorstoreIndexCreator(vectorstore_kwargs={"persist_directory":"persist"}).from_loaders([loader])
   else:
+    print("Creating index...")
     index = VectorstoreIndexCreator().from_loaders([loader])
 
 chain = ConversationalRetrievalChain.from_llm(
-  llm=ChatOpenAI(model="gpt-3.5-turbo"),
+  llm=ChatOpenAI(model="gpt-4"),
   retriever=index.vectorstore.as_retriever(search_kwargs={"k": 1}),
 )
 
@@ -46,7 +48,9 @@ while True:
   if query in ['quit', 'q', 'exit']:
     sys.exit()
   result = chain({"question": query, "chat_history": chat_history})
-  print(result['answer'])
+  print("\n----------\n")
+  print(textwrap.fill(result['answer'], width=80))
+  print("\n----------\n")
 
   chat_history.append((query, result['answer']))
   query = None
